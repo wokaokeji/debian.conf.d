@@ -1,0 +1,72 @@
+background yes
+#own_window yes
+#own_window_type normal
+#own_window_transparent yes
+#own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+double_buffer yes
+no_buffers yes
+update_interval 1.0
+total_run_times 0
+draw_shades yes
+draw_outline no
+draw_borders no
+draw_graph_borders no
+minimum_size 206 5
+#maximum_width 206
+default_color ffffff
+default_shade_color 000000
+default_outline_color 000000
+alignment top_right
+gap_x 5
+gap_y 38
+cpu_avg_samples 2
+uppercase no # set to yes if you want all text to be in uppercase
+use_spacer right
+use_xft yes
+xftfont Sans:pixelsize=14
+override_utf8_locale yes
+TEXT
+${color #98c2c7}Computer:${color}${alignr} $alignc$nodename
+${color #98c2c7}Kernel: ${color}${alignr}$alignc$kernel
+${color #98c2c7}Online: ${color}${alignr}$alignc$uptime
+${color #98c2c7}Tasks:${alignr}${color}$processes ${color #98c2c7}(${color}$running_processes running${color #98c2c7})
+${color #db7093}$stippled_hr
+${color #98c2c7}CPU Usage: ${color} ${alignr}$cpu%
+${color #98c2c7}$cpubar
+${color #98c2c7}CPU1 ${alignr}${color}${cpu cpu1}%
+${color #98c2c7}${cpubar 4 cpu1}
+${color #98c2c7}CPU2 ${alignr}${color}${cpu cpu2}%
+${color #98c2c7}${cpubar 4 cpu2}
+${color #98c2c7}Memory Usage:${color #4169e1}:${color}${alignr}$mem ${color #98c2c7}/${color}$memmax${color #4169e1} ${color #98c2c7}(${color}$memperc%${color #98c2c7})
+${color #98c2c7}${membar}
+${color #98c2c7}Swap${color #4169e1}:${color}${alignr}$swap${color #98c2c7}/${color}$swapmax ${color #98c2c7}(${color}$swapperc%${color #98c2c7})
+${color #98c2c7}${swapbar 4}
+${color #98c2c7}Filesystem: ${alignr}${color}${fs_used /}${color #98c2c7}/${color}${fs_size /}
+${color #98c2c7}${fs_bar 4 /}
+${color #db7093}$stippled_hr
+#${color #98c2c7}Brightness:${alignr}${color}${exec grep current /proc/acpi/video/C099/C1AE/brightness|cut -d: -f2}%
+${color #98c2c7}ACPI temperature:${alignr}${color}$acpitemp ℃
+#${color #98c2c7}ACPI state:${alignr} ${color}$acpiacadapter
+${color #98c2c7}Battery: ${battery_time C23B} ${alignr}${color}${battery_percent C23B}%
+#${color #98c2c7}${battery_bar C23B 4}
+${color #db7093}$stippled_hr
+${color #98c2c7}IP Address: ${color}${alignr}${addr eth0}
+${color #98c2c7}Down:${color}${alignr} ${downspeed eth0}/s
+${color #98c2c7}Total:${color}${alignr} ${totaldown eth0}
+${color #98c2c7}Up:${color} ${alignr}${upspeed eth0}/s
+${color #98c2c7}Total:${color}${alignr} ${totalup eth0}
+${color #db7093}$stippled_hr
+${color #98c2c7}Highest CPU $alignr CPU% MEM%
+${color}${top name 1}$alignr${top cpu 1}${top mem 1}
+${color}${top name 2}$alignr${top cpu 2}${top mem 2}
+${color}${top name 3}$alignr${top cpu 3}${top mem 3}
+${color}${top name 4}$alignr${top cpu 4}${top mem 4}
+${color}${top name 5}$alignr${top cpu 5}${top mem 5}
+${color #db7093}$stippled_hr
+${color #98c2c7}Highest MEM $alignr CPU% MEM%
+${color}${top_mem name 1}$alignr${top_mem cpu 1}${top_mem mem 1}
+${color}${top_mem name 2}$alignr${top_mem cpu 2}${top_mem mem 2}
+${color}${top_mem name 3}$alignr${top_mem cpu 3}${top_mem mem 3}
+${color}${top_mem name 4}$alignr${top_mem cpu 4}${top_mem mem 4}
+${color}${top_mem name 5}$alignr${top_mem cpu 5}${top_mem mem 5}
+#${color #db7093}$stippled_hr

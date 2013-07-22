@@ -1,0 +1,30 @@
+#########################################
+###    copy this file to /etc/apt/    ###
+#########################################
+
+# deb cdrom:[Debian GNU/Linux 6.0.6 _Squeeze_ - Official amd64 xfce+lxde-CD Binary-1 20120929-16:46]/ squeeze main
+
+#deb cdrom:[Debian GNU/Linux 6.0.6 _Squeeze_ - Official amd64 xfce+lxde-CD Binary-1 20120929-16:46]/ squeeze main
+
+# Line commented out by installer because it failed to verify:
+#deb http://security.debian.org/ squeeze/updates main
+# Line commented out by installer because it failed to verify:
+#deb-src http://security.debian.org/ squeeze/updates main
+
+# squeeze-updates, previously known as 'volatile'
+# A network mirror was not selected during install.  The following entries
+# are provided as examples, but you should amend them as appropriate
+# for your mirror of choice.
+#
+# deb http://ftp.debian.org/debian/ squeeze-updates main
+# deb-src http://ftp.debian.org/debian/ squeeze-updates main
+
+#deb http://mirrors.163.com/debian/ wheezy main non-free contrib
+#deb http://mirrors.163.com/debian/ squeeze-proposed-updates main non-free contrib
+#deb-src http://mirrors.163.com/debian/ squeeze main non-free contrib
+#deb-src http://mirrors.163.com/debian/ squeeze-proposed-updates main non-free contrib
+
+
+#this support IPv6
+deb http://mirror.switch.ch/ftp/mirror/debian/  wheezy main non-free contrib
+

@@ -1,0 +1,8 @@
+cp -a fontdir /usr/share/fonts/truetype/
+cd /usr/share/fonts/truetype/
+mkfontscale
+mkfontdir
+fc-cache -vf
+cp fonts.conf ~/.fonts.conf
+logout and re-login
+

@@ -1,2 +1,2 @@
-debian.conf.d
-=============
+My Debian config files
+==========
